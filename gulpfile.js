@@ -8,7 +8,8 @@ const autoprefixer=require('gulp-autoprefixer');
 const sourcemaps=require('gulp-sourcemaps');
 const plumber=require('gulp-plumber');
 const notify=require('gulp-notify');
-const fileinclude=require('gulp-file-include')
+const fileinclude=require('gulp-file-include');
+const del=require('del');
 gulp.task('watch',function(){
     watch(['./build/*.html','./build/css/**/*.css'],gulp.parallel(browsersync.reload))
     watch('./build/*.html',gulp.parallel('html'))
@@ -58,5 +59,16 @@ gulp.task('html',function(){
     .pipe(fileinclude({prefix:'@@'}))
     .pipe(gulp.dest('./build/'))
 })
+
+gulp.task('clean:build',function(){
+    return del('./build')
+})
+
+gulp.task('default',
+  gulp.series(
+      gulp.parallel('clean:build'),
+      gulp.parallel('server','watch')
+  )
+)
 
 gulp.task('default',gulp.parallel('server','watch','scss','html'))
