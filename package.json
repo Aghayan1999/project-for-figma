@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Aghayan1999/project-for-figma/issues"
   },
-  "homepage": "https://github.com/Aghayan1999/project-for-figma#readme"
+  "homepage": "https://github.com/Aghayan1999/project-for-figma#readme",
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
 }
