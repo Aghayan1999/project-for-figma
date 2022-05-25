@@ -151,7 +151,7 @@ $mgleft:50px;
 }
 
 .europe{
-    width: 741px;
+    width: 541px;
     height: 537px;
     background: $background;
     @include shadow();
@@ -324,12 +324,19 @@ $mgleft:50px;
 
 // choose
 
-.making{
-    @include prom();
+@mixin making {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
     font-size: 36px;
     line-height: 45px;
+    color: #000000;
     margin-top: 240px;
-    margin-left: 110px;
+    margin-left: 140px;
+}
+
+.making{
+    @include making();
 }
 
 .makes{
@@ -348,11 +355,18 @@ $mgleft:50px;
         margin-left: 2px;
     }
 
-    .stop{
-        @include prom();
+    @mixin stop {
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 700;
         font-size: 22px;
         line-height: 28px;
+        color: #000000;
         margin-top: 70px;
+    }
+
+    .stop{
+        @include stop()
     }
 
     .select{
@@ -360,12 +374,18 @@ $mgleft:50px;
         margin-top: 31px;
     }
 
-    .show{
-        @include prom();
+    @mixin show{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
         font-size: 18px;
         line-height: 22px;
         color: #F78065;
         margin-top: 16px;
+    }
+
+    .show{
+        @include show();
     }
 
     .a{
@@ -486,10 +506,18 @@ $mgleft:50px;
         @include block();
     }
 
-    .sites{
-        @include prom();
+
+    @mixin sites {
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 700;
         font-size: 36px;
         line-height: 45px;
+        color: #000000;
+    }
+
+    .sites{
+        @include sites();
     }
 
     .camper{
@@ -606,12 +634,19 @@ $mgleft:50px;
     opacity: 0.5;
 }
 
-.our{
-    @include out();
+@mixin our {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
     font-size: 36px;
     line-height: 45px;
+    color: #000000;
     margin-top: 232px;
     margin-left: 110px;
+}
+
+.our{
+    @include our();
 }
 
 .const{
@@ -679,3 +714,156 @@ $mgleft:50px;
     }
 }
 
+// footer
+
+@mixin where {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: hsl(0, 0%, 0%);
+}
+
+@mixin bm {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    color: #000000;
+}
+
+@mixin li {
+    font-family: 'Montserrat';
+    font-style: normal;
+    list-style: none;
+    margin-right: 37px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+@mixin when {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 60px;
+    color: #000000;
+    margin-top: 16px;
+}
+
+.foot{
+    width: 1440px;
+    height: 575px;
+    background: hsl(0, 0%, 97%);
+    margin-top: 251px;
+
+    .easy{
+        display: $display
+    }
+
+    .ea{
+        @include block();
+        margin-top: $mgtop + 36px;
+        margin-left: $mgleft + 53px;
+    }
+
+    .eacam{
+        @include prom();
+    }
+
+    .when{
+        @include when();
+    }
+
+    .network{
+        @include block();
+        margin-top: $mgtop + 36px;
+        margin-left: 235px;
+    }
+
+    .the{
+        width: 300px;
+        @include bm();
+    }
+
+    .where{
+        @include where();
+        margin-top: $mgtop - 24px;
+    }
+
+    .tour{
+        @include where();
+        margin-top: $mgtop - 25px;
+    }
+
+    .ot{
+        @include where();
+        margin-top: $mgtop - 24px;
+    }
+
+    .become{
+        @include block();
+        margin-top: 83px;
+        margin-left: -10px;
+    }
+
+    .bm{
+        width: 300px;
+        @include bm();
+    }
+
+    .pair{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        margin-top: 26px;
+    }
+
+    .ass{
+        @include block();
+        margin-top: 85px;
+        margin-left: -10px;
+    }
+
+    .assist{
+        @include bm();
+    }
+
+    .support{
+        @include where();
+        margin-top: 26px;
+    }
+
+
+    .horizon{
+        width: 1237px;
+        height: 0;
+        opacity: 0.2;
+        border: 1px solid #000000;
+        margin-top: 25px;
+        margin-left: 103px;
+     }
+
+     .myul{
+         display: $display;
+         display: flex;
+         margin-top: 28px;
+         margin-left: 110px;
+     }
+
+     .myul>li{
+         @include li();
+     } 
+
+
+   .ab{
+       margin-left: 529px;
+    }
+}
