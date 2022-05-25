@@ -4,7 +4,7 @@ const watch=require('gulp-watch');
 const gulpSass=require('gulp-sass');
 const dartSass=require('sass');
 const sass=gulpSass(dartSass);
-const autoprefixer=require('gulp');
+const autoprefixer=require('gulp-autoprefixer');
 const sourcemaps=require('gulp-sourcemaps');
 const plumber=require('gulp-plumber');
 const notify=require('gulp-notify');
@@ -60,15 +60,15 @@ gulp.task('html',function(){
     .pipe(gulp.dest('./build/'))
 })
 
-gulp.task('clean:build',function(){
-    return del('./build')
-})
+// gulp.task('clean:build',function(){
+//     return del('./build')
+// })
 
-gulp.task('default',
-  gulp.series(
-      gulp.parallel('clean:build'),
-      gulp.parallel('server','watch')
-  )
-)
+// gulp.task('default',
+//   gulp.series(
+//       gulp.parallel('clean:build'),
+//       gulp.parallel('server','watch')
+//   )
+// )
 
 gulp.task('default',gulp.parallel('server','watch','scss','html'))

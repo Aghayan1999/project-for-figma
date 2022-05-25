@@ -1,0 +1,62 @@
+$diplay:flex;
+$background:#FFFFFF;
+$jc:space-between;
+$width:100%;
+$position:relative;
+$w:32px;
+$h:32px;
+$mgtop:50px;
+$mgleft:50px;
+@mixin woman {
+    width: 1440px;
+    height: 650px;
+    background-image: url(../img/Rectangle\ 1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-top: 0px;
+}
+
+.woman{
+    @include woman()
+}
+
+.userparent{
+    width: $width;
+    display: $diplay;
+    justify-content: $jc;
+    padding-top: 20px;
+
+    .cube{
+        width: $w;
+        height: $h;
+        position: $position;
+        left: 53px;
+        top: 18px;
+    }
+
+    .user{
+        width: 86px;
+        height: 53px;
+        background: $background;
+        border-radius: 26.5px;
+        position: $position;
+        right: 122px;
+        top: 10px;
+        display: $diplay;
+    }
+
+    .s1{
+        margin-left: $mgleft - 30px;
+        margin-top: $mgtop - 28px;
+        display: block;
+    }
+
+    .s2{
+        margin-top: $mgleft - 40px;
+        margin-left: 8px;
+    }
+}
+
+@mixin shadow{
+    box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
+}

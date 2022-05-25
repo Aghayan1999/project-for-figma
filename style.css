@@ -1,5 +1,5 @@
 
-@import url("https://fonts.googleapis.com/css?family=Merriweather:700&display=swap");
+/* @import url("https://fonts.googleapis.com/css?family=Merriweather:700&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap");
 
 
@@ -160,7 +160,7 @@
 
 /* cont */
 
-.cont{
+/* .cont{
     width: 1370px;
     height: 2770px;
     background: #FFFFFF;
@@ -295,7 +295,7 @@
 
 /* making */
 
-.making{
+/* .making{
     font-family: 'Merriweather';
     font-style: normal;
     font-weight: 700;
@@ -354,11 +354,11 @@
     line-height: 22px;
     color: #F78065;
     margin-top: 16px;
-}
+} */
 
 /* a */
 
-.a{
+/* .a{
     display: flex;
     flex-direction: column;
     margin-left: 75px;
@@ -447,11 +447,11 @@
     line-height: 22px;
     color: #F78065;
     margin-top: 14px;
-}
+} */
 
 /* prices */
 
-.prices{
+/* .prices{
     display: flex;
     flex-direction: column;
     margin-left: 60px;
@@ -491,11 +491,11 @@
     line-height: 22px;
     color: #F78065;
     margin-top: 41px;
-}
+} */
 
 /* join */
 
-.join{
+/* .join{
     display: flex;
     margin-top: 260px;
     margin-left: 100px;
@@ -558,11 +558,11 @@
 
 .sttxt{
     margin-left: 7px;
-}
+} */
 
 /* lucciano */
 
-.lucciano{
+/* .lucciano{
     display: flex;
     flex-direction: column;
     margin-left: 147px;
@@ -602,11 +602,11 @@
     line-height: 22px;
     color: #F78065;
     margin-top: 10px;
-}
+} */
 
 /* cremonesi */
 
-.cremonesi{
+/* .cremonesi{
     display: flex;
     flex-direction: column;
     margin-left: 50px;
@@ -635,11 +635,11 @@
     line-height: 17px;
     color: #3F3D56;
     margin-top: 8px;
-}
+} */
 
 /* beneventi */
 
-.beneventi{
+/* .beneventi{
     display: flex;
     flex-direction: column;
     margin-left: 50px
@@ -668,11 +668,11 @@
     line-height: 17px;
     color: #3F3D56;
     margin-top: 8px;
-}
+} */
 
 /* our */
 
-.our{
+/* .our{
     font-family: 'Merriweather';
     font-style: normal;
     font-weight: 700;
@@ -720,10 +720,10 @@
     color: #000000;
     opacity: 0.5;
     margin-top: 50px;
-}
+} */
 
 /* dig */
-
+/* 
 .digitial{
     display: flex;
     flex-direction: column;
@@ -773,7 +773,7 @@
 
 /* ded */
 
-.ded{
+/* .ded{
     display: flex;
     flex-direction: column;
     margin-left: 41px;
@@ -793,13 +793,13 @@
     line-height: 28px;
     color: #000000;
     margin-top: 64px;
-}
+}  */
 
 /* .t{
     width: 326px;
 } */
 
-.foot{
+/* .foot{
     width: 1440px;
     height: 575px;
     background: #F7F7F7;
@@ -880,11 +880,11 @@
     line-height: 17px;
     color: #000000;
     margin-top: 24px;
-}
+} */
 
 /* become */
 
-.become{
+/* .become{
     display: flex;
     flex-direction: column;
     margin-top: 96px;
@@ -908,11 +908,11 @@
     line-height: 17px;
     color: #000000;
     margin-top: 26px;
-}
+} */
 
 /* ass */
 
-.ass{
+/* .ass{
     display: flex;
     flex-direction: column;
     margin-top: 96px;
@@ -970,5 +970,4 @@
 
 .ab{
     margin-left: 529px;
-}
-
+}  */
