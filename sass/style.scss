@@ -591,3 +591,90 @@ $mgleft:50px;
         margin-top: 8px;
     }
 }
+
+// our
+
+@mixin you {
+    width: 386px;
+    height: 96px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    opacity: 0.5;
+}
+
+.our{
+    @include out();
+    font-size: 36px;
+    line-height: 45px;
+    margin-top: 232px;
+    margin-left: 110px;
+}
+
+.const{
+    display: $display;
+    margin-left: $mgleft + 60px;
+    margin-top: $mgtop + 58px;
+
+    .trans{
+        @include block();
+    }
+
+    .conv{
+        @include describe();
+        margin-top: $mgtop + 14px;
+    }
+
+    .compare{
+        width: $w;
+        height: $h;
+    }
+
+    .you{
+        @include you();
+        margin-top: $mgtop - 10px;
+    }
+
+    .digitial{
+        @include block();
+        margin-left: 40px;
+    }
+
+    .lib{
+        width: $w;
+        height: $h;
+    }
+
+    .mark{
+        @include describe();
+        margin-top: $mgtop + 14px;
+    }
+
+    .dont{
+        @include you();
+        margin-top: 40px;
+    }
+
+    .ded{
+        @include block();
+        margin-left: 70px;
+    }
+
+    .hsv{
+        width: $w;
+        height: $h;
+    }
+
+    .cam{
+        @include describe();
+        margin-top: $mgtop + 14px;
+    }
+
+    .t{
+        @include you();
+        margin-top: 14px;
+    }
+}
