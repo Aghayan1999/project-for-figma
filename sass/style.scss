@@ -1,7 +1,6 @@
 $display:flex;
 $background:#FFFFFF;
 $jc:space-between;
-$width:100%;
 $position:relative;
 $w:32px;
 $h:32px;
@@ -16,13 +15,48 @@ $mgleft:50px;
     margin-top: 0px;
 }
 
+@mixin wd{
+    width: 100%;
+    display: flex;
+}
+
+@mixin block {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin prom {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+}
+
+@mixin italian {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+@mixin discover {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+}
+
 .woman{
     @include woman()
 }
 
 .userparent{
-    width: $width;
-    display: $display;
+    @include wd();
     justify-content: $jc;
     padding-top: 20px;
 
@@ -103,8 +137,7 @@ $mgleft:50px;
     padding-top: 96px;
 
     .findparent{
-        width: $width;
-        display: $display;
+        @include wd();
         margin-left: $mgleft - 46px;
         margin-top: $mgtop - 65px;
     }
@@ -123,8 +156,7 @@ $mgleft:50px;
     }
 
     .loremparent{
-        width: $width;
-        display: $display;
+        @include wd();
     }
 
     .lorem{
@@ -134,8 +166,7 @@ $mgleft:50px;
     }
 
     .exploreparent{
-        width: $width;
-        display: $display;
+        @include wd();
     }
 
     .explore{
@@ -145,8 +176,7 @@ $mgleft:50px;
     }
 
     .worldparent{
-        width: $width;
-        display: $display;
+        @include wd();
     }
     
     .world{
@@ -168,3 +198,99 @@ $mgleft:50px;
 }
 
 
+// cont
+
+.cont{
+    width: 1370px;
+    height: 2770px;
+    background: $background;
+
+    .info{
+        @include wd();
+        margin-top: 500px;
+        margin-left: 119px;
+    }
+
+    .info>div{
+        margin-right: 3px;
+    }
+
+    .block1{
+        @include block();
+    }
+
+    .undraw{
+        width: 250px;
+    }
+
+    .prom{
+        width: 500px;
+        @include prom();
+        margin-top: 84px;
+    }
+
+    .prom1{
+        @include prom();
+    }
+
+    .italian{
+        @include italian();
+        margin-top: 15px;
+    }
+
+    .des{
+        width: 500px;
+        @include prom();
+        margin-top: 80px;
+    }
+
+
+    .discover{
+        @include discover();
+        color: #F78065;
+        margin-top: 26px;
+    }
+
+    .block2{
+        @include block();
+        margin-left: -78px;
+    }
+
+    .draw{
+        width: 222.82px;
+        height: 180px;
+    }
+    
+    .need{
+        @include prom();
+    }
+
+    .cover{
+        @include discover();
+        color: hsl(11, 90%, 68%);
+        margin-top: 26px;
+    }
+
+    .block3{
+        @include block();
+        margin-left: -73px;
+    }
+
+    .prom3{
+        @include prom();
+    }
+
+    .abroad{
+        @include prom();
+    }
+
+    .i{
+        @include italian();
+        margin-top: 10px
+    }
+
+    .dis{
+        @include discover();
+        margin-top: 24px;
+    }
+}
