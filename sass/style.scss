@@ -51,6 +51,33 @@ $mgleft:50px;
     line-height: 22px;
 }
 
+@mixin select {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    opacity: 0.5;
+}
+
+@mixin describe {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    color: #000000;
+}
+
+@mixin show {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #F78065;
+}
 .woman{
     @include woman()
 }
@@ -292,5 +319,133 @@ $mgleft:50px;
     .dis{
         @include discover();
         margin-top: 24px;
+    }
+}
+
+// choose
+
+.making{
+    @include prom();
+    font-size: 36px;
+    line-height: 45px;
+    margin-top: 240px;
+    margin-left: 110px;
+}
+
+.makes{
+    display: $display;
+    margin-left: $mgleft + 70px;
+    margin-top: $mgtop + 60px;
+
+    .choose{
+        @include block();
+    }
+
+    .color1{
+        width: $w - 6px;
+        height: $h - 12px;
+        margin-top: 5px;
+        margin-left: 2px;
+    }
+
+    .stop{
+        @include prom();
+        font-size: 22px;
+        line-height: 28px;
+        margin-top: 70px;
+    }
+
+    .select{
+        @include select();
+        margin-top: 31px;
+    }
+
+    .show{
+        @include prom();
+        font-size: 18px;
+        line-height: 22px;
+        color: #F78065;
+        margin-top: 16px;
+    }
+
+    .a{
+        @include block();
+        margin-left: $mgleft + 15px;
+    }
+
+    .color2{
+        width: $w - 6px;
+        height: $h - 12px;
+        margin-left: 0px;
+        margin-top: 5px;
+    }
+
+    .describe{
+        @include describe();
+        margin-top: $mgtop + 20px;
+        margin-left: $mgleft - 50px;
+    }
+
+    .property{
+        @include select();
+        margin-top: $mgtop - 20px;
+        margin-left: $mgleft - 50px;
+    }
+
+    .show1{
+        @include show();
+        margin-top: 36px;
+        margin-left: 0px;
+    }
+
+    .build{
+        @include block();
+        margin-left: $mgleft + 10px;
+    }
+
+    .wcr{
+        width: $w - 2px;
+        height: $h -2px;
+    }
+
+    .showcase{
+        @include describe();
+        margin-top: $mgtop + 16px;
+    }
+
+    .photos{
+        @include select();
+        margin-top: $mgtop - 20px;
+    }
+
+    .show2{
+        @include show();
+        margin-top: 14px;
+        margin-left: 0px; 
+    }
+
+    .prices{
+        @include block();
+        margin-left: $mgleft + 10px;
+    }
+
+    .calendar{
+        width: $w;
+        height: $h;
+    }
+
+    .aval{
+        @include describe();
+        margin-top: $mgtop + 16px;
+    }
+
+    .pitch{
+        @include select();
+        margin-top: $mgtop - 20px;
+    }
+
+    .show3{
+        @include show();
+        margin-top: $mgtop - 12px;
     }
 }
