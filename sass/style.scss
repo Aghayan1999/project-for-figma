@@ -1,4 +1,4 @@
-$diplay:flex;
+$display:flex;
 $background:#FFFFFF;
 $jc:space-between;
 $width:100%;
@@ -22,7 +22,7 @@ $mgleft:50px;
 
 .userparent{
     width: $width;
-    display: $diplay;
+    display: $display;
     justify-content: $jc;
     padding-top: 20px;
 
@@ -42,7 +42,7 @@ $mgleft:50px;
         position: $position;
         right: 122px;
         top: 10px;
-        display: $diplay;
+        display: $display;
     }
 
     .s1{
@@ -57,6 +57,114 @@ $mgleft:50px;
     }
 }
 
+// europe
+
 @mixin shadow{
     box-shadow: 0px 4px 100px rgba(0, 0, 0, 0.1);
 }
+
+@mixin out{
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 39px;
+    line-height: 49px;
+    color: #000000;
+}
+
+@mixin lorem {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    opacity: 0.6;
+}
+
+@mixin explore {
+    padding: 3px 80px 10px 45px;
+    border: none;
+    background: #F78065;
+    box-sizing: border-box;
+}
+
+.europe{
+    width: 741px;
+    height: 537px;
+    background: $background;
+    @include shadow();
+    position: absolute;
+    z-index: 999;
+    top: 384px;
+    left: 63px;
+    padding-right: 162px;
+    padding-bottom: 75px;
+    padding-top: 96px;
+
+    .findparent{
+        width: $width;
+        display: $display;
+        margin-left: $mgleft - 46px;
+        margin-top: $mgtop - 65px;
+    }
+
+    .outparent{
+        margin-top: $mgtop - 30px;
+        margin-left: $mgleft + 10px;
+    }
+
+    .out{
+        @include out()
+    }
+
+    .save{
+        color: #F78065;
+    }
+
+    .loremparent{
+        width: $width;
+        display: $display;
+    }
+
+    .lorem{
+        @include lorem();
+        margin-top: $mgtop - 21px;
+        margin-left: $mgleft + 14px;
+    }
+
+    .exploreparent{
+        width: $width;
+        display: $display;
+    }
+
+    .explore{
+        @include explore();
+        margin-left: $mgleft + 14px;
+        margin-top: $mgtop - 27px;
+    }
+
+    .worldparent{
+        width: $width;
+        display: $display;
+    }
+    
+    .world{
+        width: $w - 8px;
+        height: $h - 8px;
+        margin-top: $mgtop - 32px;
+        position: $position;
+        left: 30px;
+    }
+
+    .exploretext{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 125%;
+        color: #FFFFFF;
+        margin-top: 20px;
+        margin-left: 35px;
+    }
+}
+
+
