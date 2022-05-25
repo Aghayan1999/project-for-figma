@@ -324,12 +324,19 @@ $mgleft:50px;
 
 // choose
 
-.making{
-    @include prom();
+@mixin making {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
     font-size: 36px;
     line-height: 45px;
+    color: #000000;
     margin-top: 240px;
-    margin-left: 110px;
+    margin-left: 140px;
+}
+
+.making{
+    @include making();
 }
 
 .makes{
@@ -348,11 +355,18 @@ $mgleft:50px;
         margin-left: 2px;
     }
 
-    .stop{
-        @include prom();
+    @mixin stop {
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 700;
         font-size: 22px;
         line-height: 28px;
+        color: #000000;
         margin-top: 70px;
+    }
+
+    .stop{
+        @include stop()
     }
 
     .select{
@@ -360,12 +374,18 @@ $mgleft:50px;
         margin-top: 31px;
     }
 
-    .show{
-        @include prom();
+    @mixin show{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 700;
         font-size: 18px;
         line-height: 22px;
         color: #F78065;
         margin-top: 16px;
+    }
+
+    .show{
+        @include show();
     }
 
     .a{
@@ -486,10 +506,18 @@ $mgleft:50px;
         @include block();
     }
 
-    .sites{
-        @include prom();
+
+    @mixin sites {
+        font-family: 'Merriweather';
+        font-style: normal;
+        font-weight: 700;
         font-size: 36px;
         line-height: 45px;
+        color: #000000;
+    }
+
+    .sites{
+        @include sites();
     }
 
     .camper{
@@ -606,12 +634,19 @@ $mgleft:50px;
     opacity: 0.5;
 }
 
-.our{
-    @include out();
+@mixin our {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 700;
     font-size: 36px;
     line-height: 45px;
+    color: #000000;
     margin-top: 232px;
     margin-left: 110px;
+}
+
+.our{
+    @include our();
 }
 
 .const{
